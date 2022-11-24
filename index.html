@@ -4,28 +4,520 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+    <title>Api Marte</title>
+
     <!-- font awesome cdn link  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
 
     <!-- custom css file link  -->
     <link rel="stylesheet" href="css/style.css">
 
 </head>
 <body>
-<header>
-    <input type="checkbox" name="" id="nav-toggler" class="fas fa-bars">    
-        
+    
+<!-- header section starts  -->
+
+<header class="header">
+
+    <a href="#" class="logo"><img src="images/cohete.png" alt=""> API de la NASA </a>
+    <input type="checkbox" name="" id="nav-toggler" class="fas fa-bars">  
     <nav class="navbar">
-        <a href="#" data-text="home">home</a>
-        <a href="#" data-text="about">about</a>
-        <a href="#" data-text="services">services</a>
-        <a href="#" data-text="blogs">blogs</a>
-        <a href="#" data-text="contact">contact</a>
+        
+        <a href="#inicio" data-text="Inicio">Inicio</a>
+        <a href="#camaras" data-text="Cámaras">Cámaras</a>
+        <a href="#descripcion" data-text="Descripción">Descripción</a>
+        <a href="#fotos" data-text="Fotos">Fotos</a>
+        <a href="#galeria" data-text="Galería">Galería</a>
         <div class="background-image"></div>
     </nav>
+
+    
+
 </header>
 
+<!-- header section ends -->
+
+
+
+<!-- home section starts  -->
+
+<section class="home" id="inicio">
+
+    <div class="swiper home-slider">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+                <div class="box" style="background: url(images/bg11.jpg) no-repeat;">
+                    <div class="content">
+                        <span>never stop</span>
+                        <h3>exploring</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit unde ex molestias soluta consequatur saepe aliquam, excepturi delectus consequuntur minus!</p>
+                        
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="box second" style="background: url(images/bg22.jpg) no-repeat;">
+                    <div class="content">
+                        <span>make tour</span>
+                        <h3>amazing</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit unde ex molestias soluta consequatur saepe aliquam, excepturi delectus consequuntur minus!</p>
+                        
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="box" style="background: url(images/bg33.jpg) no-repeat;">
+                    <div class="content">
+                        <span>explore the</span>
+                        <h3>new world</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit unde ex molestias soluta consequatur saepe aliquam, excepturi delectus consequuntur minus!</p>
+                        
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+
+    </div>
+
+</section>
+
+<!-- home section ends -->
+
+<!-- category section starts  -->
+
+<section class="category" id="camaras">
+
+    <h1 class="heading">Registro de fotografías</h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="images/fhaz.jpg" alt="">
+            <h3>FHAZ</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum, id.</p>
+            <a href="#" class="btn">Ver más</a>
+        </div>
+
+        <div class="box">
+            <img src="images/camara2.jpg" alt="">
+            <h3>RHAZ</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum, id.</p>
+            <a href="#" class="btn">Ver más</a>
+        </div>
+
+        <div class="box">
+            <img src="images/camara3.jpg" alt="">
+            <h3>CHEMCAM</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum, id.</p>
+            <a href="#" class="btn">Ver más</a>
+        </div>
+
+        <div class="box">
+            <img src="images/robert.jpg" alt="">
+            <h3>MAST</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum, id.</p>
+            <a href="#" class="btn">Ver más</a>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- category section ends -->
+
+<!-- about section starts  -->
+
+<section class="about" id="descripcion">
+
+    <div class="image">
+        <img src="images/robert.jpg" alt="">
+    </div>
+
+    <div class="content">
+        <h3>Rovers en Marte</h3>
+        <p>Cada rover tiene su propio conjunto de fotos almacenadas en la base de datos, que se pueden consultar por separado. Hay varias consultas posibles que se pueden realizar contra la API. Las fotos están organizadas por el sol (rotación marciana o día) en el que fueron tomadas, contando desde la fecha de aterrizaje del rover.</p>
+        <p>Además de consultar por fecha, los resultados también se pueden filtrar por la cámara con la que se tomaron y las respuestas se limitarán a 25 fotos por llamada.</p>
+        
+    </div>
+
+</section>
+
+<!-- about section ends -->
+
+<!-- shop section starts  -->
+
+<section class="shop" id="fotos">
+
+    <h1 class="heading">Más vistas</h1>
+
+    <div class="swiper product-slider">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide slide">
+                <div class="image">
+                    <img src="images/product-1.jpg" alt="">
+                    <div class="icons">
+                       
+                        <a href="#" class="fas fa-eye"></a>
+                        <a href="#" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>survival kits</h3>
+                    <div class="price"> $5.00 - $25.00 </div>
+                   
+                </div>
+            </div>
+
+            <div class="swiper-slide slide">
+                <div class="image">
+                    <img src="images/product-2.jpg" alt="">
+                    <div class="icons">
+                        
+                        <a href="#" class="fas fa-eye"></a>
+                        <a href="#" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>survival kits</h3>
+                    <div class="price"> $5.00 - $25.00 </div>
+                    
+                </div>
+            </div>
+
+            <div class="swiper-slide slide">
+                <div class="image">
+                    <img src="images/product-3.jpg" alt="">
+                    <div class="icons">
+                        
+                        <a href="#" class="fas fa-eye"></a>
+                        <a href="#" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>survival kits</h3>
+                    <div class="price"> $5.00 - $25.00 </div>
+                    
+                </div>
+            </div>
+
+            <div class="swiper-slide slide">
+                <div class="image">
+                    <img src="images/product-4.jpg" alt="">
+                    <div class="icons">
+                        
+                        <a href="#" class="fas fa-eye"></a>
+                        <a href="#" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>survival kits</h3>
+                    <div class="price"> $5.00 - $25.00 </div>
+                   
+                </div>
+            </div>
+
+            <div class="swiper-slide slide">
+                <div class="image">
+                    <img src="images/product-5.jpg" alt="">
+                    <div class="icons">
+                       
+                        <a href="#" class="fas fa-eye"></a>
+                        <a href="#" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>survival kits</h3>
+                    <div class="price"> $5.00 - $25.00 </div>
+                    
+                </div>
+            </div>
+
+            <div class="swiper-slide slide">
+                <div class="image">
+                    <img src="images/product-6.jpg" alt="">
+                    <div class="icons">
+                        <a href="#" class="fas fa-shopping-cart"></a>
+                        <a href="#" class="fas fa-eye"></a>
+                        <a href="#" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>survival kits</h3>
+                    <div class="price"> $5.00 - $25.00 </div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+
+    </div>
+
+</section>
+
+<!-- shop section ends -->
+
+<!-- packages section starts  -->
+
+<section class="packages" id="galeria">
+
+    <h1 class="heading">Galería de fotos</h1>
+
+   
+
+    <div class="box-container">
+        <input type="checkbox" id="click2">
+
+        <div class="main">
+            <label for="click2">
+                <div class="box">
+                    <div class="image slide">
+                        <img src="images/img-3.jpg" alt="">
+                        <div class="icons">
+                            <a href="#"> <i class="fas fa-calendar"></i> 21st may, 2021 </a>
+                            <a href="#"> <i class="fas fa-user"></i> by admin </a>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <h3>featured tour package</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam, eos.</p>
+                        <div class="price">$250 - $450</div>
+                        <a href="#" class="btn">explore now</a>
+                    </div>
+                </div>
+            </label>
+            <label for="click2">
+                <div class="box">
+                    <div class="image slide">
+                        <img src="images/img-5.jpg" alt="">
+                        <div class="icons">
+                            <a href="#"> <i class="fas fa-calendar"></i> 21st may, 2021 </a>
+                            <a href="#"> <i class="fas fa-user"></i> by admin </a>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <h3>featured tour package</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam, eos.</p>
+                        <div class="price">$250 - $450</div>
+                        <a href="#" class="btn">explore now</a>
+                    </div>
+                </div>
+            </label>
+            <label for="click2">
+                <div class="box">
+                    <div class="image slide">
+                        <img src="images/img-6.jpg" alt="">
+                        <div class="icons">
+                            <a href="#"> <i class="fas fa-calendar"></i> 21st may, 2021 </a>
+                            <a href="#"> <i class="fas fa-user"></i> by admin </a>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <h3>featured tour package</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam, eos.</p>
+                        <div class="price">$250 - $450</div>
+                        <a href="#" class="btn">explore now</a>
+                    </div>
+                </div>
+            </label>
+        </div>
+        
+
+
+    </div>
+
+    
+    <div class="box-container">
+        <input type="checkbox" id="click3">
+
+        <div class="main">
+            <label for="click3">
+                <div class="box">
+                    <div class="image slide">
+                        <img src="images/img-3.jpg" alt="">
+                        <div class="icons">
+                            <a href="#"> <i class="fas fa-calendar"></i> 21st may, 2021 </a>
+                            <a href="#"> <i class="fas fa-user"></i> by admin </a>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <h3>featured tour package</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam, eos.</p>
+                        <div class="price">$250 - $450</div>
+                        <a href="#" class="btn">explore now</a>
+                    </div>
+                </div>
+            </label>
+            <label for="click3">
+                <div class="box">
+                    <div class="image slide">
+                        <img src="images/img-5.jpg" alt="">
+                        <div class="icons">
+                            <a href="#"> <i class="fas fa-calendar"></i> 21st may, 2021 </a>
+                            <a href="#"> <i class="fas fa-user"></i> by admin </a>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <h3>featured tour package</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam, eos.</p>
+                        <div class="price">$250 - $450</div>
+                        <a href="#" class="btn">explore now</a>
+                    </div>
+                </div>
+            </label>
+            <label for="click3">
+                <div class="box">
+                    <div class="image slide">
+                        <img src="images/img-6.jpg" alt="">
+                        <div class="icons">
+                            <a href="#"> <i class="fas fa-calendar"></i> 21st may, 2021 </a>
+                            <a href="#"> <i class="fas fa-user"></i> by admin </a>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <h3>featured tour package</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam, eos.</p>
+                        <div class="price">$250 - $450</div>
+                        <a href="#" class="btn">explore now</a>
+                    </div>
+                </div>
+            </label>
+        </div>
+        
+
+
+    </div>
+
+
+    
+    <div class="box-container">
+        <input type="checkbox" id="click1">
+
+        <div class="main">
+            <label for="click1">
+                <div class="box">
+                    <div class="image slide">
+                        <img src="images/img-3.jpg" alt="">
+                        <div class="icons">
+                            <a href="#"> <i class="fas fa-calendar"></i> 21st may, 2021 </a>
+                            <a href="#"> <i class="fas fa-user"></i> by admin </a>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <h3>featured tour package</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam, eos.</p>
+                        <div class="price">$250 - $450</div>
+                        <a href="#" class="btn">explore now</a>
+                    </div>
+                </div>
+            </label>
+            <label for="click1">
+                <div class="box">
+                    <div class="image slide">
+                        <img src="images/img-5.jpg" alt="">
+                        <div class="icons">
+                            <a href="#"> <i class="fas fa-calendar"></i> 21st may, 2021 </a>
+                            <a href="#"> <i class="fas fa-user"></i> by admin </a>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <h3>featured tour package</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam, eos.</p>
+                        <div class="price">$250 - $450</div>
+                        <a href="#" class="btn">explore now</a>
+                    </div>
+                </div>
+            </label>
+            <label for="click1">
+                <div class="box">
+                    <div class="image slide">
+                        <img src="images/img-6.jpg" alt="">
+                        <div class="icons">
+                            <a href="#"> <i class="fas fa-calendar"></i> 21st may, 2021 </a>
+                            <a href="#"> <i class="fas fa-user"></i> by admin </a>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <h3>featured tour package</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam, eos.</p>
+                        <div class="price">$250 - $450</div>
+                        <a href="#" class="btn">explore now</a>
+                    </div>
+                </div>
+            </label>
+        </div>
+        
+
+
+    </div>
+
+
+
+    
+<!--PRUEBA DE GALERÍA INTERACTIVA-->
+    
+
+</section>
+
+<!-- packages section ends -->
+
+
+<!-- reviews section ends -->
+
+
+<!-- services section ends -->
+
+
+</section>
+
+<!-- footer section starts  -->
+
+<section class="footer">
+
+    <div class="box-container">
+
+
+    <div class="credit">Creación por <span>UNSM</span> | todos los derechos reservados!</div>
+
+</section>
+
+<!-- footer section ends -->
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+<!-- custom js file link  -->
+<script src="js/script.js"></script>
 
 </body>
 </html>
