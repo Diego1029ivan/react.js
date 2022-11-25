@@ -511,6 +511,15 @@ section {
 .packages {
   background: #eee;
 }
+.detalle-galeria{
+  height: 1400px;
+  background: url(../images/fondomarte1.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.detalle-galeria h1{
+  color: #fff;
+}
 
 .packages .box-container {
   display: -ms-grid;
@@ -523,11 +532,15 @@ section {
   
  
 }
-
+.packages .box-container label{
+  background: none;
+}
 .packages .box-container .box {
   text-align: center;
-  background: #fff;
+  background: rgba(255, 255, 255, 0.568);
   
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
   border: 0.2rem solid #10221b;
   -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
           box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
@@ -536,6 +549,7 @@ section {
 
 .packages .box-container .box:hover {
   background: #10221b;
+  
 }
 
 .packages .box-container .box:hover .content > * {
@@ -549,6 +563,7 @@ section {
 .packages .box-container .box:hover .btn:hover {
   background: #fff;
   color: #10221b;
+  
 }
 
 .packages .box-container .box .image {
@@ -568,7 +583,9 @@ section {
 }
 
 .packages .slide .icons {
-  background: #10221b;
+  background: #fafafa9f;
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
   border-radius: .5rem;
   padding: 1rem;
   position: relative;
@@ -578,7 +595,7 @@ section {
 
 .packages .slide .icons a {
   font-size: 1.4rem;
-  color: #fff;
+  color: rgb(3, 3, 3);
   margin: 0 1rem;
 }
 
@@ -611,6 +628,35 @@ section {
   font-size: 2rem;
   color:rgb(182, 25, 13);
 }
+
+
+.packages .image-float{
+  height: 300px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-right: 30px;
+}
+.packages .image-float img{
+  height: 100%;
+  animation-name: alien;
+  animation-duration:4s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes alien{
+0%{
+  margin-top: 0;
+}
+  50%{
+  margin-top: 30px;
+}
+
+100%{
+  margin-top: 0;
+}
+}
+
 
 .footer {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(../images/footer-bg.jpg) no-repeat;
@@ -656,7 +702,7 @@ section {
 
 .footer .credit {
   text-align: center;
-  margin-top: 2.5rem;
+  
   padding: 1rem;
   padding-top: 2.5rem;
   font-size: 2rem;
@@ -805,6 +851,15 @@ section {
 .main label:nth-child(3) {
   transform: rotate(25deg);
 }
+.main label:nth-child(4) {
+  transform: rotate(35deg);
+}
+.main label:nth-child(5) {
+  transform: rotate(45deg);
+}
+.main label:nth-child(6) {
+  transform: rotate(65deg);
+}
 
 input {
   display: none;
@@ -821,11 +876,25 @@ input:checked ~ .main label:nth-child(2) {
 input:checked ~ .main label:nth-child(3) {
   transform: translateX(400px);
 }
+input:checked ~ .main label:nth-child(4) {
+  transform: translateY(550px);
+}
+input:checked ~ .main label:nth-child(5) {
+  transform: translateX(-400px) translateY(550px);
+  
+}
+input:checked ~ .main label:nth-child(6) {
+  transform: translateX(400px) translateY(550px);
+  
+}
 
 input:checked ~ .main label:hover img {
   filter: grayscale(0);
   transform: scale(1.06);
 }
 
-/**/
-
+.detalle-footer{
+  background: #000000c9;
+  display:flex;
+  justify-content: center;
+}
