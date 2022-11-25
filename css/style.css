@@ -254,8 +254,10 @@ section {
 
 .home .box .content {
   width: 50rem;
-  background-color: #fff;
-  opacity: 0.85;
+  background-color: rgba(255, 255, 255, 0.288);
+  border-radius: 15px;
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
 }
 
 .home .box .content span {
@@ -514,11 +516,11 @@ section {
   display: -ms-grid;
   display: grid;
   width: 100%;
-  height: 75vh;
+  height: 600px;
   -ms-grid-columns: (minmax(32rem, 1fr))[auto-fit];
       grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr));
   gap: 1.5rem;
-  margin: 30px;
+  
  
 }
 
