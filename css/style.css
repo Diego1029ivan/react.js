@@ -343,7 +343,7 @@ section {
 }
 
 .detalle-content h2,h3{
-  color: #fff !important;
+  color: #fff ;
 }
 .about .image {
   -webkit-box-flex: 1;
@@ -406,10 +406,13 @@ section {
       -ms-flex: 1 1 42rem;
           flex: 1 1 42rem;
           padding: 20px;
-          background-color: #575757;
+          
           backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   opacity: 0.8;
+}
+.detalle .content{
+  background-color: #575757;
 }
 
 .about .content h3 {
