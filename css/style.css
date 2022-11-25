@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;1,100;1,300&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@900&family=Roboto+Slab:wght@200;500&display=swap');
 * {
   font-family: 'Poppins', sans-serif;
   margin: 0;
@@ -45,6 +46,12 @@ section {
   background: none;
   font-size: 1.7rem;
   padding: 1rem 3rem;
+}
+
+.detalle-btn{
+  border: 0.2rem solid #aa2a09;
+  color: #fcfcfc;
+  background-color: rgba(230, 66, 16, 0.808);
 }
 
 .btn:hover {
@@ -324,7 +331,16 @@ section {
       flex-wrap: wrap;
   gap: 2rem;
 }
-
+.detalle{
+  height: 100vh;
+  
+  background: url(../images/marte4.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.detalle-content p{
+  
+}
 .about .image {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 42rem;
@@ -332,17 +348,64 @@ section {
   padding-right: 5rem;
   padding-bottom: 5rem;
 }
-
+.about .campos{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.about .campos h2{
+  font-weight: 600;
+  font-size: 2rem;
+  width: 50%;
+  color:rgb(182, 25, 13);
+}
+.about .campos p{
+  
+  width: 50%;
+  
+}
 .about .image img {
   width: 100%;
   -webkit-box-shadow: 4rem 4rem 0 rgba(0, 0, 0, 0.1);
           box-shadow: 4rem 4rem 0 rgba(0, 0, 0, 0.1);
 }
+.about .image-float{
+  height: 300px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-right: 30px;
+}
+.about .image-float img{
+  height: 100%;
+  animation-name: alien;
+  animation-duration:4s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes alien{
+0%{
+  margin-top: 0;
+}
+  50%{
+  margin-top: 30px;
+}
+
+100%{
+  margin-top: 0;
+}
+}
+
 
 .about .content {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 42rem;
           flex: 1 1 42rem;
+          padding: 20px;
+          background-color: #f1bcbc;
+          backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  opacity: 0.8;
 }
 
 .about .content h3 {
@@ -355,6 +418,7 @@ section {
   color: #10221b;
   padding: 1rem 0;
   line-height: 2;
+
 }
 
 .shop .slide {
