@@ -339,7 +339,11 @@ section {
   background-position: center;
 }
 .detalle-content p{
-  
+  color: #fff !important;
+}
+
+.detalle-content h2,h3{
+  color: #fff !important;
 }
 .about .image {
   -webkit-box-flex: 1;
@@ -402,7 +406,7 @@ section {
       -ms-flex: 1 1 42rem;
           flex: 1 1 42rem;
           padding: 20px;
-          background-color: #f1bcbc;
+          background-color: #575757;
           backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   opacity: 0.8;
@@ -418,6 +422,7 @@ section {
   color: #10221b;
   padding: 1rem 0;
   line-height: 2;
+  padding-left: 10px
 
 }
 
