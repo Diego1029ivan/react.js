@@ -342,8 +342,8 @@ section {
   color: #fff !important;
 }
 
-.detalle-content h2,h3{
-  color: #fff ;
+.detalle-content .titulo{
+  color: #fff !important;
 }
 .about .image {
   -webkit-box-flex: 1;
@@ -356,17 +356,21 @@ section {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  margin: 10px;
 }
 .about .campos h2{
   font-weight: 600;
-  font-size: 2rem;
+  font-size: 1.5rem;
   width: 50%;
   color:rgb(182, 25, 13);
 }
 .about .campos p{
-  
+ 
   width: 50%;
   
+}
+.about .campos .bord{
+  border-right: 5px solid rgb(182, 25, 13);
 }
 .about .image img {
   width: 100%;
@@ -407,12 +411,14 @@ section {
           flex: 1 1 42rem;
           padding: 20px;
           
-          backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  opacity: 0.8;
+          backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+  
 }
 .detalle .content{
-  background-color: #575757;
+  background-color: #5757572c;
+  box-shadow: 4rem 4rem 0 rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
 }
 
 .about .content h3 {
@@ -425,7 +431,8 @@ section {
   color: #10221b;
   padding: 1rem 0;
   line-height: 2;
-  padding-left: 10px
+  padding-left: 10px;
+  margin-right: 10px;
 
 }
 
